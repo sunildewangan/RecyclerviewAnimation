@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RecyclerviewAnimation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android</string>
+    <string name="nav_header_subtitle">sunildewangan93@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_diffutil">DiffUtil</string>
+    <string name="menu_dragdrop">DragAndDrop</string>
+    <string name="menu_loadmore">LoadMore</string>
+    <string name="menu_swipetodelete">SwipeToDelete</string>
+
+    <string name="home_second">Home Second</string>
+</resources>

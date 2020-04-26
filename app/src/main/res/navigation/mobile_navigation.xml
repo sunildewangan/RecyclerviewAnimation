@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.anim.recyclerviewanimation.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.anim.recyclerviewanimation.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/home_second_fragment">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/nav_diffutil"
+        android:name="com.anim.recyclerviewanimation.ui.diffutil.DiffUtilFragment"
+        android:label="@string/menu_diffutil"
+        tools:layout="@layout/fragment_diff_util" />
+
+    <fragment
+        android:id="@+id/nav_draganddrop"
+        android:name="com.anim.recyclerviewanimation.ui.dragdrop.DrageAndDropFragment"
+        android:label="@string/menu_dragdrop"
+        tools:layout="@layout/fragment_diff_util" />
+
+    <fragment
+        android:id="@+id/nav_loadmore"
+        android:name="com.anim.recyclerviewanimation.ui.loadmore.LoadMoreFragment"
+        android:label="@string/menu_loadmore"
+        tools:layout="@layout/fragment_loadmore" />
+
+    <fragment
+        android:id="@+id/nav_swiptodelete"
+        android:name="com.anim.recyclerviewanimation.ui.swipedelete.SwipToDeleteFragment"
+        android:label="@string/menu_swipetodelete"
+        tools:layout="@layout/swip_to_delete_fragment" />
+</navigation>
